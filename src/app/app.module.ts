@@ -11,6 +11,12 @@ import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { UploadPageComponent } from './upload-page/upload-page.component';
+import { ForgotPassPageComponent } from './forgot-pass-page/forgot-pass-page.component';
+import { ResetPassPageComponent } from './reset-pass-page/reset-pass-page.component';
+import { CreateNewPassPageComponent } from './create-new-pass-page/create-new-pass-page.component';
+import { CreateProfilePageComponent } from './create-profile-page/create-profile-page.component';
+import { UserProfilePageComponent } from './user-profile-page/user-profile-page.component';
+import { UploadsListPageComponent } from './uploads-list-page/uploads-list-page.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +25,13 @@ import { UploadPageComponent } from './upload-page/upload-page.component';
     SignUpPageComponent,
     HomePageComponent,
     ProfilePageComponent,
-    UploadPageComponent
+    UploadPageComponent,
+    ForgotPassPageComponent,
+    ResetPassPageComponent,
+    CreateNewPassPageComponent,
+    CreateProfilePageComponent,
+    UserProfilePageComponent,
+    UploadsListPageComponent
   ],
   imports: [
     BrowserModule,
