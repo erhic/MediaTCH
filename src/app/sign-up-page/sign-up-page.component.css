@@ -1,0 +1,15 @@
+.signimg{
+  overflow: hidden;
+}
+.img-fluid{
+
+ transform: rotate(0deg);
+ opacity: 1;
+ padding-left: 10%;
+ border-radius: 10px;
+}
+.signin{
+  overflow: hidden;
+  
+}
+

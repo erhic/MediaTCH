@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { Routes,RouterModule }from '@angular/router';
 
 import { MatSliderModule } from '@angular/material/slider';
 import {MatSidenavModule} from '@angular/material/sidenav';
@@ -17,6 +18,23 @@ import { CreateNewPassPageComponent } from './create-new-pass-page/create-new-pa
 import { CreateProfilePageComponent } from './create-profile-page/create-profile-page.component';
 import { UserProfilePageComponent } from './user-profile-page/user-profile-page.component';
 import { UploadsListPageComponent } from './uploads-list-page/uploads-list-page.component';
+
+const routes: Routes = [
+  {path:'sign-up',component:SignUpPageComponent},
+  {path:'sign-up-page',component:SignUpPageComponent},
+  {path:'sign-up-page',component:LoginPageComponent},
+  {path:'sign-up-page',component:HomePageComponent},
+  {path:'sign-up-page',component:ProfilePageComponent},
+  {path:'sign-up-page',component:ForgotPassPageComponent},
+  {path:'sign-up-page',component:ResetPassPageComponent},
+  {path:'sign-up-page',component:CreateNewPassPageComponent},
+  {path:'sign-up-page',component:UploadPageComponent},
+  {path:'sign-up-page',component:CreateProfilePageComponent},
+  {path:'sign-up-page',component:UserProfilePageComponent},
+  {path:'sign-up-page',component: UploadsListPageComponent},
+  
+
+];
 
 @NgModule({
   declarations: [
@@ -37,8 +55,10 @@ import { UploadsListPageComponent } from './uploads-list-page/uploads-list-page.
     BrowserModule,
     BrowserAnimationsModule,
     MatSliderModule,
-    MatSidenavModule
+    MatSidenavModule,
+    RouterModule.forRoot(routes)
   ],
+  exports: [RouterModule],
   providers: [],
   bootstrap: [AppComponent]
 })
