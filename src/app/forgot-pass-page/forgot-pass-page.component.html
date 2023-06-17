@@ -1,44 +1,25 @@
-<p>forgot-pass-page works!</p>
-<!DOCTYPE html>
-<html lang="en">
+<main class="form-signin pt-5">
+  <div class="container row mx-auto mt-5 roundes border border-light">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
+    <div class="col-md-5 mt-5 mx-auto ">
+      <form>
+        <a routerLink="/login" class="text-decoration-none text-info mb-2">Back</a>
+        <h1 class="h3 mb-3 mt-1 fw-bold">Forgot Password</h1>
 
-<body>
-
-
-  <main class="form-signin ">
-    <div class="container row mx-auto mt-5 roundes border border-light">
-
-      <div class="col-md-5 mt-5 mx-auto ">
-        <form>
-          <a class="text-decoration-none text-info mb-2">Back</a>
-          <h1 class="h3 mb-3 mt-1 fw-bold">Forgot Password</h1>
-
-          <div class="form-floating mb-2 mt-1">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Email address</label>
-          </div>
+        <div class="form-floating mb-2 mt-1">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
 
 
-          <button class="w-100 btn btn-lg btn-info mt-4" type="submit">Reset Password</button>
+        <button class="w-100 btn btn-lg btn-info mt-4" type="submit">Reset Password</button>
 
-        </form>
-      </div>
-      <div class="col-md-5 mx-auto   row" style="background-color: rgb(44, 61, 85); ">
-        <p class=" col-md-10 d-flex mx-auto float-center bg-info  d-none d-md-none d-lg-block mt-5 mb-5 p-5 signin">
-          <img class=" studiomic img-fluid " src="assets/images/studiomic.png" alt="">
-        </p>
-      </div>
+      </form>
     </div>
-  </main>
-
-
-
-</body>
-
-</html>
+    <div class="col-md-5 mx-auto   row" style="background-color: rgb(44, 61, 85); ">
+      <p class=" col-md-10 d-flex mx-auto float-center bg-info  d-none d-md-none d-lg-block mt-5 mb-5 p-5 signin">
+        <img class=" studiomic img-fluid " src="assets/images/studiomic.png" alt="">
+      </p>
+    </div>
+  </div>
+</main>

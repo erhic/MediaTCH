@@ -1,53 +1,37 @@
-<p>login-page works!</p>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-
-<body>
-
-
-  <main class="form-signin ">
-    <div class="container row mx-auto mt-5 roundes border border-light">
-      <div class="col-md-5 mx-auto   row" style="background-color: rgb(44, 61, 85); ">
-        <p class=" col-md-10 d-flex mx-auto float-center bg-info  d-none d-md-none d-lg-block mt-5 mb-5 p-5 signin">
-          <img class="  img-fluid " src="assets/images/headphone.png" alt="">
-        </p>
-      </div>
-      <div class="col-md-5 mx-auto ">
-        <form>
-
-          <h1 class="h3 mb-3 fw-bold">Sign In</h1>
-
-          <div class="form-floating mb-2">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Email address</label>
-          </div>
-          <div class="form-floating mb-2">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-            <label for="floatingPassword">Password</label>
-          </div>
-
-          <div class="checkbox mb-3">
-            <label>
-              <input type="checkbox" value="remember-me"> Remember me
-            </label>
-            <a class="text-info float-end text-decoration-none">Forgot Password</a>
-          </div>
-          <button class="w-100 btn btn-lg btn-info" type="submit">Sign in</button>
-          <p class="mt-5 mb-3 text-muted">Don't Have an Account <span class="text-info text-decoration-none">Sign
-              Up</span></p>
-        </form>
-      </div>
+<main class="form-signin pt-5">
+  <div class="container row mx-auto mt-5 roundes border border-light">
+    <div class="col-md-5 mx-auto   row" style="background-color: rgb(44, 61, 85); ">
+      <p class=" col-md-10 d-flex mx-auto float-center bg-info  d-none d-md-none d-lg-block mt-5 mb-5 p-5 signin">
+        <img class="  img-fluid " src="assets/images/headphone.png" alt="">
+      </p>
     </div>
-  </main>
+    <div class="col-md-5 mx-auto ">
+      <form>
 
+        <h1 class="h3 mb-3 fw-bold">Sign In</h1>
 
+        <div class="form-floating mb-2">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating mb-2">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Password</label>
+        </div>
 
-</body>
-
-</html>
+        <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+          <a routerLink="/forgotpassword" class="text-info float-end text-decoration-none">Forgot Password</a>
+        </div>
+        <button class="w-100 btn btn-lg btn-info" type="submit">Sign in</button>
+        <p class="mt-5 mb-3 text-muted ">
+          Don't Have an Account
+          <a class="text-info text-decoration-none" routerLink="/signup">Sign
+            Up</a>
+        </p>
+      </form>
+    </div>
+  </div>
+</main>
