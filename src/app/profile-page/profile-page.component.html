@@ -5,11 +5,12 @@
     <div class="position-sticky">
       <div class="list-group list-group-flush mx-3 mt-4">
         <hr class="text-white mb-4">
-        <a href="#" class="list-group-item list-group-item-action py-2 my-4 ripple active outline-light bg-info "
+        <a routerLink="/upload"
+          class="list-group-item list-group-item-action py-2 my-4 ripple active outline-light bg-info "
           aria-current="true">
           <i class="fas fa-tachometer-alt fa-fw me-3"></i><span class="text-white fw-bold">Upload Audio</span>
         </a>
-        <a href="#" class="list-group-item list-group-item-action py-2 mb-2 ripple fw-bold">
+        <a class="list-group-item list-group-item-action py-2 mb-2 ripple fw-bold">
           <i class="fas fa-chart-area fa-fw me-2 "></i><span class="">MENU</span>
         </a>
         <a routerLink="/home" class="list-group-item list-group-item-action py-3 ripple"><i
@@ -17,12 +18,12 @@
             Home</span></a>
 
         <hr class="text-white my-5">
-        <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
-            class="fas fa-chart-line fa-fw me-2"></i><span class="fw-bold">LIBRARY</span></a>
-        <a href="#" class="list-group-item list-group-item-action py-3 ripple">
+        <a class="list-group-item list-group-item-action py-2 ripple"><i class="fas fa-chart-line fa-fw me-2"></i><span
+            class="fw-bold">LIBRARY</span></a>
+        <a routerLink="/uploadlist" class="list-group-item list-group-item-action py-3 ripple">
           <i class="bi bi-upload text-info"></i><span> My Uploads</span>
         </a>
-        <a href="#" class="list-group-item list-group-item-action py-3 ripple"><i
+        <a routerLink="/uploadlist" class="list-group-item list-group-item-action py-3 ripple"><i
             class="bi bi-arrow-counterclockwise text-info"></i><span> Recents</span></a>
         <hr class="text-white my-3">
         <a href="#" class="list-group-item list-group-item-action py-1 ripple"><i
@@ -188,9 +189,9 @@
           </p>
 
           <p class="mx-3"> <i class="bi bi-geo-alt-fill" style="color: rgb(255, 103, 196);"></i> Mombasa ,Kenya</p>
-          <button class="w-50 btn  btn-info" type="submit"><i class="bi bi-pencil text-white"></i><span
-              class="text-white fw-bold"> Edit
-              Profile</span> </button>
+          <a routerLink="/createprofile" class="w-50 btn  btn-info" type="submit"><i
+              class="bi bi-pencil text-white"></i><span class="text-white fw-bold"> Edit
+              Profile</span> </a>
         </div>
       </div>
 
