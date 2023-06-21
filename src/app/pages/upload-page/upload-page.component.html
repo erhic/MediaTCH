@@ -1,25 +1,28 @@
+<!--Main Navigation-->
 <header>
   <!-- Sidebar -->
   <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse " style="background-color: rgb(44, 61, 85);">
     <div class="position-sticky">
       <div class="list-group list-group-flush mx-3 mt-4">
         <hr class="text-white mb-4">
-        <a routerLink="/upload"
-          class="list-group-item list-group-item-action py-2 my-4 ripple active outline-light bg-info "
+        <!-- <a href="#" class="list-group-item list-group-item-action py-2 my-4 ripple active outline-light bg-info "
           aria-current="true">
           <i class="fas fa-tachometer-alt fa-fw me-3"></i><span class="text-white fw-bold">Upload Audio</span>
-        </a>
+        </a> -->
         <a href="#" class="list-group-item list-group-item-action py-2 mb-2 ripple fw-bold">
           <i class="fas fa-chart-area fa-fw me-2 "></i><span class="">MENU</span>
         </a>
-        <a routerLink="/createprofile" class="list-group-item list-group-item-action py-3 ripple"><i
+        <a routerLink="/home" class="list-group-item list-group-item-action py-3 ripple"><i
+            class="bi bi-house text-info"></i><span>
+            Home</span></a>
+        <a routerLink="/userprofile" class="list-group-item list-group-item-action py-3 ripple"><i
             class="bi bi-person text-info"></i><span>
             Profile</span></a>
 
         <hr class="text-white my-5">
-        <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
-            class="fas fa-chart-line fa-fw me-2"></i><span class="fw-bold">LIBRARY</span></a>
-        <a routerLink="/upload" class="list-group-item list-group-item-action py-3 ripple">
+        <a class="list-group-item list-group-item-action py-2 ripple"><i class="fas fa-chart-line fa-fw me-2"></i><span
+            class="fw-bold">LIBRARY</span></a>
+        <a routerLink="/uploadlist" class="list-group-item list-group-item-action py-3 ripple">
           <i class="bi bi-upload text-info"></i><span> My Uploads</span>
         </a>
         <a routerLink="/uploadlist" class="list-group-item list-group-item-action py-3 ripple"><i
@@ -94,13 +97,13 @@
 
         <!-- Icon dropdown -->
         <li class="nav-item dropdown">
-          <a class="nav-link me-3 me-lg-0 dropdown-toggle hidden-arrow" href="#" id="navbarDropdown" role="button"
+          <a class="nav-link me-3 me-lg-0 dropdown-toggle hidden-arrow" id="navbarDropdown" role="button"
             data-mdb-toggle="dropdown" aria-expanded="false">
             <i class="united kingdom flag m-0"></i>
           </a>
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
             <li>
-              <a class="dropdown-item" href="#"><i class="united kingdom flag"></i>English
+              <a class="dropdown-item" href=""><i class="united kingdom flag"></i>English
                 <i class="fa fa-check text-success ms-2"></i></a>
             </li>
             <li>
@@ -162,83 +165,42 @@
 
 <!--Main layout-->
 <main style="margin-top: 2%;">
-  <div class="container pt-1"></div>
-  <p class="fw-bold fs-6 mx-4"><span style="color: rgb(255, 103, 196);">Approved</span> <span class=""
-      style="color: rgb(35, 46, 96);"> Podcasts</span></p>
-  <div class="row p-3 mx-auto">
-    <div class="card col-md-3 border-light d-flex float-center mx-auto">
-      <img class="text-center " src="assets/images/studiomic.png" alt="">
+  <div class="container pt-5"></div>
 
-    </div>
+  <div class="col">
+    <div class="row p-3 mx-auto">
+      <div class=" card row col-md-3 border-light bg-info d-flex float-center
+        mx-auto" style="overflow:hidden; height: 160px;">
 
-    <div class="card col-md-3 border-white mx-auto">
-      <img class="" src="assets/images/Frame 50.jpg" alt="">
+        <i class=" bi bi-person text-dark text-center fs-1 p-5"></i>
 
-    </div>
+      </div>
 
-    <div class="card col-md-3 border-white mx-auto">
-      <img class="" src="assets/images/Frame 50.jpg" alt="">
+      <div class="card col-md-9 border-white mx-auto">
 
-    </div>
+        <p class="fw-bold fs-5 mx-4"><span style="color: rgb(255, 103, 196);">Upload File</span> </p>
 
-    <div class="card col-md-3 border-white mx-auto">
-      <img class="" src="assets/images/Frame 50.jpg" alt="">
+        <form class="px-4">
+          <div class="form-floating">
+            <input class="form-control" type="file" (change)="onFileSelected($event)">
+          </div>
+          <button class="w-10 btn btn-lg btn-info mt-4" (click)="uploadFile($event)"><i class="bi bi-upload"></i> Upload audio</button>
 
-    </div>
-  </div>
+        </form>
+        <br><br>
+        <h3>Or rather add a YouTube URL</h3>
+        <br>
+        <form [formGroup]="uploadForm" class="px-4">
+          <div class="form-floating">
+            <input class="form-control" type="text" formControlName="youtubeLink">
+          </div>
+          <button class="w-10 btn btn-lg btn-info mt-4" (click)="uploadLink()" type="submit"><i class="bi bi-upload"></i> Upload URL</button>
 
-  <p class="fs-5 px-3 fw-bold text-secondary">Your Recents Uploaded Podcasts</p>
-  <div class="row p-1 mx-auto">
-
-
-    <div class="card col-md-4 border-light d-flex float-center mx-auto">
-      <img class="text-center " src="assets/images/studiomic.png" alt="">
-
-    </div>
-
-    <div class="card col-md-3 border-white mx-auto">
-      <img class="" src="assets/images/Frame 50.jpg" alt="">
-
-    </div>
-
-    <div class="card col-md-3 border-white mx-auto">
-      <img class="" src="assets/images/Frame 50.jpg" alt="">
-
-    </div>
-  </div>
+        </form>
 
 
-  <div class=" p-3 mt-5 mb-5  mx-1 border-white mx-auto d-flex" style="background-color:rgb(35, 46, 96) ;">
-    <div class="d-flex">
-      <img class=" rounded-1" src="assets/images/Frame 50.jpg" width="17%">
-      <a class="text-info d-flex p-3 text-decoration-none"> The success tips.</a>
-    </div>
-    <audio class="d-flex"
-      src="https://www.zapsplat.com/wp-content/uploads/2015/sound-effects-61905/zapsplat_multimedia_alert_chime_short_musical_notification_cute_child_like_001_64918.mp3?_=1"
-      controls>
-    </audio>
+      </div>
 
-  </div>
-
-
-  <div class="row p-3 mx-auto">
-    <div class="card col-md-3 border-light d-flex float-center mx-auto">
-      <img class="text-center " src="assets/images/studiomic.png" alt="">
-
-    </div>
-
-    <div class="card col-md-3 border-white mx-auto">
-      <img class="" src="assets/images/Frame 50.jpg" alt="">
-
-    </div>
-
-    <div class="card col-md-3 border-white mx-auto">
-      <img class="" src="assets/images/Frame 50.jpg" alt="">
-
-    </div>
-
-    <div class="card col-md-3 border-white mx-auto">
-      <img class="" src="assets/images/Frame 50.jpg" alt="">
 
     </div>
   </div>

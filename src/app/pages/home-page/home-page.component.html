@@ -1,28 +1,25 @@
-<!--Main Navigation-->
 <header>
   <!-- Sidebar -->
   <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse " style="background-color: rgb(44, 61, 85);">
     <div class="position-sticky">
       <div class="list-group list-group-flush mx-3 mt-4">
         <hr class="text-white mb-4">
-        <!-- <a href="#" class="list-group-item list-group-item-action py-2 my-4 ripple active outline-light bg-info "
+        <a routerLink="/upload"
+          class="list-group-item list-group-item-action py-2 my-4 ripple active outline-light bg-info "
           aria-current="true">
           <i class="fas fa-tachometer-alt fa-fw me-3"></i><span class="text-white fw-bold">Upload Audio</span>
-        </a> -->
+        </a>
         <a href="#" class="list-group-item list-group-item-action py-2 mb-2 ripple fw-bold">
           <i class="fas fa-chart-area fa-fw me-2 "></i><span class="">MENU</span>
         </a>
-        <a routerLink="/home" class="list-group-item list-group-item-action py-3 ripple"><i
-            class="bi bi-house text-info"></i><span>
-            Home</span></a>
-        <a routerLink="/userprofile" class="list-group-item list-group-item-action py-3 ripple"><i
+        <a routerLink="/createprofile" class="list-group-item list-group-item-action py-3 ripple"><i
             class="bi bi-person text-info"></i><span>
             Profile</span></a>
 
         <hr class="text-white my-5">
-        <a class="list-group-item list-group-item-action py-2 ripple"><i class="fas fa-chart-line fa-fw me-2"></i><span
-            class="fw-bold">LIBRARY</span></a>
-        <a routerLink="/uploadlist" class="list-group-item list-group-item-action py-3 ripple">
+        <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
+            class="fas fa-chart-line fa-fw me-2"></i><span class="fw-bold">LIBRARY</span></a>
+        <a routerLink="/upload" class="list-group-item list-group-item-action py-3 ripple">
           <i class="bi bi-upload text-info"></i><span> My Uploads</span>
         </a>
         <a routerLink="/uploadlist" class="list-group-item list-group-item-action py-3 ripple"><i
@@ -163,66 +160,86 @@
 </header>
 <!--Main Navigation-->
 
+<br>
 <!--Main layout-->
 <main style="margin-top: 2%;">
-  <div class="container pt-5"></div>
+  <div class="container pt-1"></div>
+  <p class="fw-bold fs-6 mx-4"><span style="color: rgb(255, 103, 196);">Approved</span> <span class=""
+      style="color: rgb(35, 46, 96);"> Podcasts</span></p>
+  <div class="row p-3 mx-auto">
+    <div class="card col-md-3 border-light d-flex float-center mx-auto">
+      <img class="text-center " src="assets/images/studiomic.png" alt="">
 
-  <div class="col">
-    <div class="row p-3 mx-auto">
-      <div class=" card row col-md-3 border-light bg-info d-flex float-center
-        mx-auto" style="overflow:hidden; height: 160px;">
+    </div>
 
-        <i class=" bi bi-person text-dark text-center fs-1 p-5"></i>
+    <div class="card col-md-3 border-white mx-auto">
+      <img class="" src="assets/images/Frame 50.jpg" alt="">
 
-      </div>
+    </div>
 
-      <div class="card col-md-9 border-white mx-auto">
+    <div class="card col-md-3 border-white mx-auto">
+      <img class="" src="assets/images/Frame 50.jpg" alt="">
 
-        <p class="fw-bold fs-5 mx-4"><span style="color: rgb(255, 103, 196);">Upload</span> <span class=""
-            style="color: rgb(35, 46, 96);"> File</span><br><span class="fs-6 text-muted"></span></p>
+    </div>
 
-        <form class="py-2 px-4">
-          <p class="fw-bold pt-5 py-3">Upload Details<br><span class="py-1 fs-6 text-muted"></span></p>
-          <div class="form-floating">
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-              style="height: 100px"></textarea>
-            <label for="floatingTextarea2">Upload Name</label>
-          </div>
+    <div class="card col-md-3 border-white mx-auto">
+      <img class="" src="assets/images/Frame 50.jpg" alt="">
 
-          <p class="fw-bold pt-5 py-3 ">Profile Headline<br><span class="py-1 fs-6 text-muted">Your quick pitch</span>
-          </p>
-          <div class="form-floating">
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingInput"
-              style="height: 100px"></textarea>
-            <label for="floatingInput">Enter</label>
-          </div>
+    </div>
+  </div>
 
-          <p class="fw-bold pt-5 py-3">All About Me<br><span class="py-1 fs-6 text-muted">Tell others about
-              yourself</span></p>
-          <div class="form-floating">
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-              style="height: 100px"></textarea>
-            <label for="floatingTextarea2">Enter</label>
-          </div>
-
-          <p class="fw-bold pt-5 py-3">Category<br><span class="py-1 fs-6 text-muted">Areas you going to talk about
-            </span></p>
-
-          <div class="form-floating"><textarea class="form-control" placeholder="Leave a comment here"
-              id="floatingTextarea2" style="height: 100px"></textarea>
-            <label for="floatingTextarea2">Category</label>
-          </div>
+  <p class="fs-5 px-3 fw-bold text-secondary">Your Recents Uploaded Podcasts</p>
+  <div class="row p-1 mx-auto">
 
 
+    <div class="card col-md-4 border-light d-flex float-center mx-auto">
+      <img class="text-center " src="assets/images/studiomic.png" alt="">
 
-          <button class="w-100 btn btn-lg btn-info mt-4" type="submit"><i class="bi bi-upload"></i> Upload Audio
-            File</button>
+    </div>
 
-        </form>
+    <div class="card col-md-3 border-white mx-auto">
+      <img class="" src="assets/images/Frame 50.jpg" alt="">
+
+    </div>
+
+    <div class="card col-md-3 border-white mx-auto">
+      <img class="" src="assets/images/Frame 50.jpg" alt="">
+
+    </div>
+  </div>
 
 
-      </div>
+  <div class=" p-3 mt-5 mb-5  mx-1 border-white mx-auto d-flex" style="background-color:rgb(35, 46, 96) ;">
+    <div class="d-flex">
+      <img class=" rounded-1" src="assets/images/Frame 50.jpg" width="17%">
+      <a class="text-info d-flex p-3 text-decoration-none"> The success tips.</a>
+    </div>
+    <audio class="d-flex"
+      src="https://www.zapsplat.com/wp-content/uploads/2015/sound-effects-61905/zapsplat_multimedia_alert_chime_short_musical_notification_cute_child_like_001_64918.mp3?_=1"
+      controls>
+    </audio>
 
+  </div>
+
+
+  <div class="row p-3 mx-auto">
+    <div class="card col-md-3 border-light d-flex float-center mx-auto">
+      <img class="text-center " src="assets/images/studiomic.png" alt="">
+
+    </div>
+
+    <div class="card col-md-3 border-white mx-auto">
+      <img class="" src="assets/images/Frame 50.jpg" alt="">
+
+    </div>
+
+    <div class="card col-md-3 border-white mx-auto">
+      <img class="" src="assets/images/Frame 50.jpg" alt="">
+
+    </div>
+
+    <div class="card col-md-3 border-white mx-auto">
+      <img class="" src="assets/images/Frame 50.jpg" alt="">
 
     </div>
   </div>
