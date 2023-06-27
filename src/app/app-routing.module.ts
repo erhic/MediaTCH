@@ -13,7 +13,7 @@ import { ProfilePageComponent} from './pages/profile-page/profile-page.component
 import { UploadsListPageComponent } from './pages/uploads-list-page/uploads-list-page.component';
 
 const routes: Routes = [
-  {path:'', redirectTo:'login', pathMatch:'full'},
+  {path:'', redirectTo:'home', pathMatch:'full'},
   {path:'signup',component:SignUpPageComponent},
   {path:'login',component:LoginPageComponent},
   {path:'home',component:HomePageComponent},
