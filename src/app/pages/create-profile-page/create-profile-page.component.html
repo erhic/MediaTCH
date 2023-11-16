@@ -1,0 +1,251 @@
+<!--Main Navigation-->
+<header>
+  <!-- Sidebar -->
+  <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse " style="background-color: rgb(44, 61, 85);">
+    <div class="position-sticky">
+      <div class="list-group list-group-flush mx-3 mt-4">
+        <hr class="text-dark mb-4">
+        <!-- <a routerLink="/upload"
+          class="list-group-item list-group-item-action py-2 my-4 ripple active outline-light bg-info "
+          aria-current="true">
+          <i class="fas fa-tachometer-alt fa-fw me-3"></i><span class="text-white fw-bold">Upload Audio</span>
+        </a> -->
+        <a href="#" class="list-group-item list-group-item-action py-2 mb-2 ripple fw-bold">
+          <i class="fas fa-chart-area fa-fw me-2 "></i><span class="">MENU</span>
+        </a>
+        <a routerLink="/home" class="list-group-item list-group-item-action py-3 ripple"><i
+            class="bi bi-person text-info"></i><span>
+            Home</span></a>
+
+
+
+        <hr class="text-dark my-5">
+
+        <hr class="text-dark my-5">
+
+        <a href="#" class="list-group-item list-group-item-action pt-5 ripple"><i
+            class="bi bi-box-arrow-left text-info"></i><span> Logout</span></a>
+
+
+
+      </div>
+    </div>
+  </nav>
+  <!-- Sidebar -->
+
+  <!-- Navbar -->
+  <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#sidebarMenu"
+        aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">
+        <img src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp" height="25" alt="MDB Logo"
+          loading="lazy" />
+      </a>
+      <!-- Search form -->
+      <form class="d-none d-md-flex input-group w-auto my-auto">
+        <input autocomplete="off" type="search" class="form-control rounded" placeholder='Search (ctrl + "/" to focus)'
+          style="min-width: 225px;" />
+        <span class="input-group-text border-0"><i class="fas fa-search"></i></span>
+      </form>
+
+      <!-- Right links -->
+      <ul class="navbar-nav ms-auto d-flex flex-row">
+        <!-- Notification dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link me-3 me-lg-0 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink"
+            role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-bell"></i>
+            <span class="badge rounded-pill badge-notification bg-danger">1</span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+            <li>
+              <a class="dropdown-item" href="#">Some news</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Another news</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Icon -->
+        <li class="nav-item">
+          <a class="nav-link me-3 me-lg-0" href="#">
+            <i class="fas fa-fill-drip"></i>
+          </a>
+        </li>
+        <!-- Icon -->
+        <li class="nav-item me-3 me-lg-0">
+          <a class="nav-link" href="#">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+
+        <!-- Icon dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link me-3 me-lg-0 dropdown-toggle hidden-arrow" href="#" id="navbarDropdown" role="button"
+            data-mdb-toggle="dropdown" aria-expanded="false">
+            <i class="united kingdom flag m-0"></i>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+            <li>
+              <a class="dropdown-item" href="#"><i class="united kingdom flag"></i>English
+                <i class="fa fa-check text-success ms-2"></i></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="flag-poland flag"></i>Polski</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="flag-china flag"></i>中文</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="flag-japan flag"></i>日本語</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="flag-germany flag"></i>Deutsch</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="flag-france flag"></i>Français</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="flag-spain flag"></i>Español</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="flag-russia flag"></i>Русский</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><i class="flag-portugal flag"></i>Português</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Avatar -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle hidden-arrow d-flex align-items-center" href="#"
+            id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp" class="rounded-circle" height="22"
+              alt="Avatar" loading="lazy" />
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+            <li>
+              <a class="dropdown-item" href="#">My profile</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Settings</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Logout</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+</header>
+<!--Main Navigation-->
+
+<!--Main layout-->
+<main style="margin-top: 3%;">
+  <div class="container pt-4"></div>
+
+  <div class="col">
+    <div class="row p-3 mx-auto">
+      <div class=" card row col-md-3 border-light bg-info d-flex float-center
+        mx-auto" style="overflow:hidden; height: 160px;">
+
+        <i class=" bi bi-person text-dark text-center fs-1 p-5"></i>
+
+      </div>
+
+      <div class="card col-md-9 border-white mx-auto">
+
+        <p class="fw-bold fs-5 mx-4"><span style="color: rgb(255, 103, 196);">Create</span> <span class=""
+            style="color: rgb(35, 46, 96);"> Profile</span><br><span class="fs-6 text-muted">More About you</span></p>
+
+        <p class="fw-bold py-2 mx-4">Personal Detail</p>
+        <form class="py-2 px-4">
+
+          <div class="form-floating">
+            <input type="Username" class="form-control " id="floatingInput" placeholder="FullName">
+            <label for="floatingInput">Full Name</label>
+          </div>
+
+          <div class="form-floating mt-2">
+            <input type="text" class="form-control" id="floatingInput" placeholder="gender">
+            <label for="floatingInput">Gender</label>
+          </div>
+          <div class="form-floating mt-2">
+            <input type="number" class="form-control" id="floatingInput" placeholder="Age">
+            <label for="floatingInput">Age</label>
+          </div>
+          <div class="form-floating mt-2">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Country">
+            <label for="floatingInput">Country</label>
+          </div>
+          <div class="form-floating mt-2">
+            <input type="password" class="form-control" id="floatingInput" placeholder="Language">
+            <label for="floatingInput">Language</label>
+          </div>
+
+          <p class="fw-bold pt-5 py-3">Profile Headline <br><span class="py-1 fs-6 text-muted">This is a quick
+              pitch</span></p>
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+              style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Enter</label>
+          </div>
+
+          <p class="fw-bold pt-5 py-3 ">About Me<br><span class="py-1 fs-6 text-muted">Tell user about
+              yourself</span>
+          </p>
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+              style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Enter</label>
+          </div>
+
+          <p class="fw-bold pt-5 py-3">My Expert Subject<br><span class="py-1 fs-6 text-muted">What areas do like to
+              talk about</span></p>
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+              style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Category</label>
+          </div>
+
+          <p class="fw-bold pt-5 py-3">Email
+            & Contact<br><span class="py-1 fs-6 text-muted">How you can be
+              reached</span></p>
+
+          <div class="form-floating"><textarea class="form-control" placeholder="Leave a comment here"
+              id="floatingTextarea2" style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Justin,O790655900</label>
+          </div>
+
+
+
+          <button class="w-100 btn btn-lg btn-info mt-4" type="submit">Save</button>
+
+        </form>
+
+
+      </div>
+
+
+    </div>
+  </div>
+</main>
+<!--Main layout-->
